@@ -1,0 +1,262 @@
+body {
+
+    background: #f0ecff;
+}
+
+ul {
+
+    cursor: pointer;
+}
+
+.profile_img {
+
+    width: 40px;
+    height: 40px;
+}
+
+.post_time {
+
+    color: rgb(204, 197, 197);
+    margin-top: 2px;
+}
+
+#post_image {
+
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+#successAlert {
+
+    position: fixed;
+    z-index: 999;
+    width: 30%;
+    bottom: 0;
+    right: 0;
+}
+
+#btn_tags {
+
+    background-color: gray;
+    color: white;
+}
+
+#create-post-btn {
+
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    color: white;
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#create-post-btn:hover {
+
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+#create-post-body {
+
+    width: 100%;
+    height: 100px;
+    border-color: gray;
+    border-radius: 5px;
+    resize: none;
+}
+
+#profile_img {
+
+    width: 40px;
+    height: 40px;
+    margin: 0 2px 0 0;
+}
+
+#nav_username {
+
+    margin: 0 10px 0 4px;
+    text-decoration: underline;
+}
+
+#post-content {
+
+    background-color: rgb(187, 187, 187);
+}
+
+#image-comment {
+
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+#commentBody {
+
+    margin: 5px 0 5px 5px;
+}
+
+#header-image {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50% !important;
+}
+
+.number-info {
+
+    font-weight: 100;
+    font-style: italic;
+}
+
+.number-info span {
+
+    font-size: 50px;
+    color: darkblue;
+}
+
+.user-main-info {
+
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#editButtonPost {
+
+    float: right;
+}
+
+#deleteButtonPost {
+
+    float: right;
+    margin-right: 5px;
+}
+
+#userInfo-div {
+
+    display: inline;
+    cursor: pointer;
+}
+
+#main-info-image {
+
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* Pure Css Loader */
+
+#loader {
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 111;
+    background: #f0ecff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 4px;
+}
+
+
+.lds-ellipsis, .lds-ellipsis div {
+  
+    box-sizing: border-box;
+}
+
+.lds-ellipsis {
+  
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+
+    position: absolute;
+    top: 33.33333px;
+    width: 13.33333px;
+    height: 13.33333px;
+    border-radius: 50%;
+    background: #9c1c1c;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
